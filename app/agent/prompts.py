@@ -39,3 +39,4 @@ class AgentPromptTemplate(StringPromptTemplate):
         # Create a list of tool names for the tools provided
         # kwargs["tool_names"] = ", ".join([tool.name for tool in self.tools])
         return self.template.format(**kwargs)
+    

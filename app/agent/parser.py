@@ -5,7 +5,6 @@ import re
 from langchain.agents import AgentOutputParser
 from langchain.schema import AgentAction, AgentFinish, OutputParserException
 
-
 class CustomAgentOutputParser(AgentOutputParser):
     def parse(self, llm_output: str) -> Union[AgentAction, AgentFinish]:
         # Check if agent should finish
